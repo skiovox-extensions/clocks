@@ -10,6 +10,3 @@
 [submodule "ampm"]
 	path = ampm
 	url = https://github.com/skiovox-extensions/clock-ampm
-[submodule "clock-hours"]
-	path = clock-hours
-	url = https://github.com/skiovox-extensions/clock-hours
