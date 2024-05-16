@@ -29,10 +29,7 @@ jobs:
 
     - name: Git Submodule Update
       run: |
-        mkdir hours
-        mkdir minutes
-        mkdir seconds
-        mkdir ampm
+        git submodule init
         git pull --recurse-submodules
         git submodule update --remote --recursive
 
