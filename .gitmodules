@@ -1,0 +1,3 @@
+[submodule "clock-hours"]
+	path = clock-hours
+	url = https://github.com/skiovox-extensions/clock-hours
