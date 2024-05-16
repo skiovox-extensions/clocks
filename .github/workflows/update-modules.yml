@@ -30,6 +30,7 @@ jobs:
       run: |
         git pull --recurse-submodules
         git submodule update --remote --recursive
+        rm clock-hours/README.md
         rmdir clock-hours
 
     - name: Commit update
