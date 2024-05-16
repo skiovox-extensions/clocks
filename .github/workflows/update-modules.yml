@@ -29,10 +29,10 @@ jobs:
 
     - name: Git Submodule Update
       run: |
-        git submodule init https://github.com/skiovox-extensions/clock-hours hours
-        git submodule init https://github.com/skiovox-extensions/clock-minutes minutes
-        git submodule init https://github.com/skiovox-extensions/clock-seconds seconds
-        git submodule init https://github.com/skiovox-extensions/clock-ampm ampm
+        git submodule add https://github.com/skiovox-extensions/clock-hours hours
+        git submodule add https://github.com/skiovox-extensions/clock-minutes minutes
+        git submodule add https://github.com/skiovox-extensions/clock-seconds seconds
+        git submodule add https://github.com/skiovox-extensions/clock-ampm ampm
         git pull --recurse-submodules
         git submodule update --init --remote --recursive
 
