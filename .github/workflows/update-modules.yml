@@ -2,6 +2,7 @@ name: Update Submodules
 
 on:
   workflow_dispatch:
+  push:
 
 permissions:
   contents: write
@@ -28,7 +29,10 @@ jobs:
 
     - name: Git Submodule Update
       run: |
-        git rm clock-hours
+        mkdir hours
+        mkdir minutes
+        mkdir seconds
+        mkdir ampm
         git pull --recurse-submodules
         git submodule update --remote --recursive
 
