@@ -32,18 +32,22 @@ jobs:
         mkdir hours
         cd hours
         git submodule init
+        git submodule update
         cd ../
         mkdir minutes
         cd minutes
         git submodule init
+        git submodule update
         cd ../
         mkdir seconds
         cd seconds
         git submodule init
+        git submodule update
         cd ../
         mkdir ampm
         cd ampm
         git submodule init
+        git submodule update
         cd ../
         git pull --recurse-submodules
         git submodule update --init --remote --recursive
