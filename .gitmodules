@@ -1,3 +1,12 @@
-[submodule "clock-hours"]
-	path = clock-hours
+[submodule "hours"]
+	path = hours
 	url = https://github.com/skiovox-extensions/clock-hours
+[submodule "minutes"]
+	path = minutes
+	url = https://github.com/skiovox-extensions/clock-minutes
+[submodule "seconds"]
+	path = seconds
+	url = https://github.com/skiovox-extensions/clock-seconds
+[submodule "ampm"]
+	path = ampm
+	url = https://github.com/skiovox-extensions/clock-ampm
