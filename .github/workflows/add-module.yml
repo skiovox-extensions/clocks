@@ -1,4 +1,4 @@
-name: Update Submodules
+name: Add Submodule
 
 on:
   workflow_dispatch:
@@ -16,8 +16,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update-modules:
-    name: Update Modules
+  add-modules:
+    name: Add ${{ inputs.to-add }} Submodule
     runs-on: ubuntu-latest
 
     # https://stackoverflow.com/questions/64407333/using-github-actions-to-automatically-update-the-repos-submodules
