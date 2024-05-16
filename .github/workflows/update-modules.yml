@@ -29,6 +29,22 @@ jobs:
 
     - name: Git Submodule Update
       run: |
+        mkdir hours
+        cd hours
+        git submodule init
+        cd ../
+        mkdir minutes
+        cd minutes
+        git submodule init
+        cd ../
+        mkdir seconds
+        cd seconds
+        git submodule init
+        cd ../
+        mkdir ampm
+        cd ampm
+        git submodule init
+        cd ../
         git pull --recurse-submodules
         git submodule update --init --remote --recursive
 
