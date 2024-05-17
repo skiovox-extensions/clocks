@@ -35,11 +35,11 @@ jobs:
       with:
         submodules: true
 
-    - name: Git Submodule Update
+    - name: Add Submodule
       run: |
         git submodule add https://github.com/${{ inputs.to-add }} ${{ inputs.path }}
 
-    - name: Commit update
+    - name: Commit Update
       run: |
         git config --global user.name 'Submodule Adder'
         git config --global user.email 'bot@noreply.github.com'
