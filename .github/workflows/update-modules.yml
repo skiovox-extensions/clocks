@@ -3,6 +3,8 @@ name: Update Submodules
 on:
   workflow_dispatch:
   push:
+  schedule:
+    - cron: "*/5 * * * *"
 
 permissions:
   contents: write
