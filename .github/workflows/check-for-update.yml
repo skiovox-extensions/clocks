@@ -47,7 +47,7 @@ jobs:
       run: |
         url="https://api.github.com/repos/${{ matrix.config.repo }}/releases/latest"
         assetsurl=$(curl -s "$url" | jq -r '.assets_url')
-        =$(curl -s "$url" | jq -r '.assets_url')
+        #download=$(curl -s "$assetsurl" | jq -r '.assets_url')
         
 
     #- name: Commit Update
